@@ -28,7 +28,14 @@ h5 {
 	font-size: 1.3em;
 }
 
-
+footer p {
+	border-top: 1px solid #bebebe;
+	color:#bebebe;
+	margin: 0 5% 3% 5%;
+	padding-top: 3%;
+	font-size: 1.6em;
+	font-weight: lighter;
+}
 
 a:hover, a:focus {
     color: none;
@@ -138,6 +145,14 @@ ul.center-block {
 	margin-top: 9%;
 }
 
+img .img_port.img-responsive {
+	min-width: 160px;
+}
+
+.img-responsive.scroll {
+	min-width: 0px;
+}
+
 #about_me {
 	font-family:'open_sansregular', Arial, Helvetica;
 }
@@ -229,6 +244,63 @@ ul.center-block {
 	}
 }
 
+@media only screen and (max-width: 350px) {
+	#home h1 {
+		font-size: 2.3em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	#portfolio h1 {
+		margin-bottom: 8%;
+	}
+
+	.img-responsive.scroll {
+		min-width: 0px;
+	}
+
+}
+
+@media only screen and (max-device-width: 320px) {
+	footer p {
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	.logo {
+		width: 220px;
+	}
+
+	h1,h2 {
+		font-size: 2.6em;
+	}
+
+	#contact p.address_size {
+		font-size: 2.6em;
+	}
+
+	#contact p.number_size {
+		font-size: 2.0em;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.img_port {
+		margin-top: 5%;
+		width: 190px;
+	}
+
+	#portfolio img {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 	.logo {
@@ -255,9 +327,9 @@ ul.center-block {
 	}
 
 	#portfolio img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+	    display: block;
+	    margin-right: auto;
+	    margin-left: auto;
 	}
 }
 
